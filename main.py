@@ -1,0 +1,82 @@
+import cv2
+
+img = cv2.imread('C:/Users/JISHNU D/Downloads/PRO-C116-project/solar-system.jpg')
+text_2_show = 'SUN'
+cv2.putText(
+    img,
+    text_2_show,
+    (20,20),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,0)
+)
+cv2.putText(
+    img,
+    'Jupiter',
+    (500,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Saturn',
+    (800,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Uranus',
+    (980,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Neptune',
+    (1100,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Mercury',
+    (100,200),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Venus',
+    (160,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Earth',
+    (280,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+cv2.putText(
+    img,
+    'Mars',
+    (400,280),
+    fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+    fontScale=1,
+    color=(0,0,255)
+)
+
+cv2.imshow('Image',img)
+print('done')
+cv2.waitKey(0)
+
+
